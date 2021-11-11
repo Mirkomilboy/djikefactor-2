@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djikefactor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main>
+        <!-- navigation and hero -->
+        <section style="background-image: url(assets/hero-bg.png);" class="relative bg-cover bg-center w-full overflow-x-hidden">
+            <!-- navigation -->
+            <div class="max-w-7xl mx-auto px-4 lg:px-10">
+                <div class="flex items-center justify-between py-3 sm:py-7">
+                    <div>
+                        <a href="index.html">
+                            <img class="w-20 sm:w-32" src="assets/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="hidden sm:flex items-center font-poppins text-[#636363] text-15 font-medium space-x-11">
+                        <a href="index.html">Home</a>
+                        <a href="#">Buyer</a>
+                        <a href="#">Seller</a>
+                        <a class="text-white text-sm rounded-full bg-brand-green py-2 px-8" href="#">Login</a>
+                    </div>
+                    <div class="sm:hidden">
+                        <button class="menuBtn shadow-custom">
+                            <img src="assets/hamburger.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- menu -->
+                <div class="menu absolute z-10 left-0 w-full text-[#636363] transform translate-x-full transition ease-in-out flex flex-col items-center justify-center font-medium bg-white/90 space-y-4 py-4">
+                    <a href="index.html">Home</a>
+                    <a href="#">Buyer</a>
+                    <a href="#">Seller</a>
+                    <a class="text-white text-sm rounded-full bg-brand-green pt-1.5 pb-2 px-8" href="#">Login</a>
+                </div>
+            </div>
+
+            <!-- hero -->
+            <div class="relative max-w-7xl mx-auto overflow-x-hidden pb-8 md:pt-40 md:pb-72 px-4 lg:px-10">
+                <img class="relative md:absolute z-0 md:-right-4 md:top-14" src="assets/hero.svg" alt="">
+                <div class="relative z-10 pt-5 md:pt-0 md:pr-80">
+                    <h1 class="font-poppins font-bold text-lg sm:text-4xl lg:text-5xl text-center sm:text-left leading-snug pb-5">Your business won’t grow itself. <br> Let us help.</h1>
+                    <p class="max-w-lg font-inter text-13 sm:text-lg text-brand-gray text-center sm:text-left leading-relaxed pb-6 ">Djikéfactor is the all-in-one solution to faciliate buying and selling for business owners all around the world.</p>
+                    <button class="flex items-center mx-auto sm:mx-0 font-inter font-bold text-sm text-brand-green border-2 border-brand-green rounded-full space-x-2 py-2 px-8">
+                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.09073 0.537737C0.778971 0.352983 0.384613 0.577693 0.384613 0.940085V11.7703C0.384613 12.1327 0.778971 12.3574 1.09073 12.1727L10.2288 6.75756C10.5344 6.57641 10.5344 6.13397 10.2288 5.95282L1.09073 0.537737Z" fill="#1ECD9C"/>
+                        </svg>
+                        <span>Show me</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- What can we do for you? -->
+        <section class="max-w-6xl mx-auto py-12 px-4 lg:px-10">
+            <h1 class="font-poppins font-bold text-15 sm:text-2xl text-center text-brand-green pb-14">What can we do for you?</h1>
+            <div class="grid grid-col-1 sm:grid-cols-3 gap-8 md:gap-14 lg:gap-28">
+                <div>
+                    <img class="mx-auto pb-3" src="assets/get-paid.svg" alt="">
+                    <h1 class="font-poppins font-semibold text-sm text-center pb-2">Get seen, Get paid</h1>
+                    <p class="font-inter text-xs text-center text-[#737373] pb-2">Getting your product seen all over the world has never been easier. Our in-house online store allows you to sell your products to buyers near and far, and they’re all Djikéfactor approved.</p>
+                    <a href="#">
+                        <img class="mx-auto" src="assets/arrow-right.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img class="mx-auto pb-3" src="assets/usd-sign.svg" alt="">
+                    <h1 class="font-poppins font-semibold text-sm text-center pb-2">Receive payment in 72h or less</h1>
+                    <p class="font-inter text-xs text-center text-[#737373] pb-8">We pay your invoices in 72h or less on behalf of your buyer. No more long wait times. </p>
+                    <a href="#">
+                        <img class="mx-auto" src="assets/arrow-right.svg" alt="">
+                    </a>
+                </div>
+                <div>
+                    <img class="mx-auto pb-3" src="assets/smile.svg" alt="">
+                    <h1 class="font-poppins font-semibold text-sm text-center pb-2">Borders are no boundary</h1>
+                    <p class="font-inter text-xs text-center text-[#737373] pb-8">Fulfill orders nationally and internationally without any of the admin work.</p>
+                    <a href="#">
+                        <img class="mx-auto" src="assets/arrow-right.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- How does it work? -->
+        <section class="max-w-4xl mx-auto py-12 px-4 lg:px-10">
+            <h1 class="font-poppins font-bold text-15 sm:text-2xl text-center text-brand-green pb-3">How does it work?</h1>
+            <p class="font-inter text-13 text-center sm:px-16">Djikefactor helps the buyers and sellers around the world when companies cant trust with their money in different regions of the world.</p>
+            <p class="font-inter text-13 text-center sm:px-16 pb-14">Djikefactor Pays the Seller upfront and gets the goods delivered to the Buyer.And then buyer has 90 days to pay the amount back.</p>
+            <img class="w-full pb-14" src="assets/logo-on-map.png" alt="">
+            <div class="flex justify-center">
+                <a class="font-poppins font-medium text-sm text-white rounded-full bg-brand-dark py-2 px-8 sm:px-16" href="#">Get started now</a>
+            </div>
+        </section>
+
+        <!-- How can you get started? -->
+        <section class="max-w-7xl mx-auto py-12 px-4 lg:px-10">
+            <div class="shadow-custom rounded-2xl py-6 lg:py-11 px-7 lg:px-20">
+                <h1 class="font-poppins font-bold text-15 sm:text-2xl text-center text-brand-green pb-24">How can you get started?</h1>
+                <div class="flex flex-wrap items-center pb-12 sm:pb-20">
+                    <div class="w-full lg:w-1/2 order-2 lg:order-1 space-y-8 lg:space-y-14">
+                        <div class="flex flex-col sm:flex-row items-center sm:space-x-7">
+                            <div class="flex items-center justify-center w-16 h-16 rounded-full flex-shrink-0 bg-brand-green mb-3">
+                                <p class="font-poppins font-semibold text-xl text-white">1</p>
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <h1 class="font-poppins font-semibold text-xl pb-1">Let’s get to know you</h1>
+                                <p class="font-inter text-15 text-brand-gray">Register on our site and we’ll ask you for some information about your company.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center sm:space-x-7">
+                            <div class="flex items-center justify-center w-16 h-16 rounded-full flex-shrink-0 bg-brand-green mb-3">
+                                <p class="font-poppins font-semibold text-xl text-white">2</p>
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <h1 class="font-poppins font-semibold text-xl pb-1">Let’s get started</h1>
+                                <p class="font-inter text-15 text-brand-gray">You join us as an official seller through our annual subscription.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center sm:space-x-7">
+                            <div class="flex items-center justify-center w-16 h-16 rounded-full flex-shrink-0 bg-brand-green mb-3">
+                                <p class="font-poppins font-semibold text-xl text-white">3</p>
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <h1 class="font-poppins font-semibold text-xl pb-1">Set up your  online store</h1>
+                                <p class="font-inter text-15 text-brand-gray">Our dedicated platform helps you put your best foot forward, we’ll showcase your goods to buyers all around the world.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row items-center sm:space-x-7">
+                            <div class="flex items-center justify-center w-16 h-16 rounded-full flex-shrink-0 bg-brand-dark mb-3">
+                                <p class="font-poppins font-semibold text-xl text-white">4</p>
+                            </div>
+                            <div class="text-center sm:text-left">
+                                <h1 class="font-poppins font-semibold text-xl pb-1">Start fulfilling! </h1>
+                                <p class="font-inter text-15 text-brand-gray">Once you’ve set up your store, all that’s left to do is sell your goods and do what you do best.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img class="w-full sm:w-1/2 mx-auto order-1 lg:order-2 lg:pl-12 pb-11 lg:pb-0" src="assets/get-started.png" alt="">
+                </div>
+
+                <p class="font-inter text-15 text-center text-brand-gray pb-5">It’s not business as usual. It’s business better than ever.</p>
+                <div class="flex justify-center">
+                    <a class="font-poppins font-medium text-sm text-white rounded-full bg-brand-dark py-2 px-12 sm:px-20" href="#">Sign up now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- cards -->
+        <section class="max-w-7xl mx-auto pb-14 px-4 lg:px-10">
+            <div class="flex flex-col md:flex-row items-start space-y-5 md:space-y-0 md:space-x-3">
+                <!-- left -->
+                    <div class="w-full md:w-1/2 space-y-5">
+                        <div class="flex items-center shadow-custom rounded-2xl p-9">
+                            <div>
+                                <h1 class="font-poppins font-bold text-lg sm:text-2xl text-brand-green pb-2.5">Focus on the future</h1>
+                                <img class="lg:hidden" src="assets/pocket.svg" alt="">
+                                <div class="font-inter text-gray-900 space-y-3">
+                                    <p>Succeeding in business shouldn’t be complicated.</p>
+                                    <p>And outside factors shouldn’t negatively affect your business’ growth.</p>
+                                    <p>That’s why we’re here to help you manage the day to day…</p>
+                                    <p>So you can focus on the future.</p>
+                                </div>
+                            </div>
+                            <img class="hidden lg:block w-1/2" src="assets/pocket.svg" alt="">
+                        </div>
+
+                        <div class="shadow-custom rounded-2xl p-9 space-y-3">
+                            <h1 class="font-poppins font-bold text-lg sm:text-2xl text-brand-green pb-2.5">Djikéfactor promise</h1>
+                            <p class="font-inter text-gray-900">We guarantee all payments on behalf of your buyer to reach you in 72 hours or less.</p>
+                            <img class="mx-auto" src="assets/deal.svg" alt="">
+                            <p class="font-inter text-gray-900">What’s more, every buyer that comes through us is thoroughly checked before being able to do business with you; your business is in safe hands.</p>
+                        </div>
+
+                        <div class="shadow-custom rounded-2xl p-9">
+                            <h1 class="font-poppins font-bold text-lg sm:text-2xl text-brand-green pb-2.5">Fuifillment has never been easier</h1>
+                            <img class="lg:hidden" src="assets/delivery.svg" alt="">
+                            <div class="flex items-center">
+                                <p class="font-inter text-gray-900 w-full lg:w-2/5">Once your buyer has paid you, we take charge of getting the goods from A-B in total security.We make sure the goods get to your buyers warehouse without a hitch, so you can focus on the parts of your business that really need you.</p>
+                                <img class="hidden lg:block w-3/5" src="assets/delivery.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- right -->
+                <div class="w-full md:w-1/2 space-y-5">
+                    <div class="shadow-custom rounded-2xl p-9 space-y-3">
+                        <h1 class="font-poppins font-bold text-lg sm:text-2xl text-brand-green pb-2.5">Borderless business </h1>
+                        <img class="mx-auto" src="assets/coin.png" alt="">
+                        <p class="font-inter text-gray-900">No matter where you are in the world, and no matter where your buyer is: get your orders fulfilled in the currency that you need.</p>
+                    </div>
+
+                    <div class="shadow-custom rounded-2xl p-9 space-y-2">
+                        <h1 class="font-poppins font-bold text-lg sm:text-2xl text-brand-green pb-2.5">Never wait on payments again</h1>
+                        <p class="font-inter text-gray-900">It’s frustrating to be left waiting for payments as a seller.</p>
+                            <p class="font-inter text-gray-900">You feel like you’re constantly waiting to be able to start fulfilling your orders.</p>
+                            <p class="font-inter text-gray-900">Never ending paperwork and wait times have you stunted when it comes to growing your business.</p>
+
+                            <img class="mx-auto py-2" src="assets/cash.png" alt="">
+                            <p class="font-inter text-gray-900">These are all problems of the past with Djikéfactor...</p>
+                        <p class="font-inter text-gray-900">Grow your business in the security and knowledge that your finances are handled from the inside out.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="max-w-7xl mx-auto px-4 lg:px-10">
+            <div class="max-w-xl mx-auto pb-10">
+                <h1 class="font-poppins font-bold text-15 sm:text-2xl text-center text-brand-green">How can you get started?</h1>
+                <p class="font-inter text-13 sm:text-15 text-center text-brand-gray">Something on your mind? Here’s some of the questions we get asked most frequently. And don’t forget - we’re here for you if you have any other queries. Just get in touch!</p>
+            </div>
+
+            <div class="accordion space-y-4">
+                <section class="py-1 px-4 shadow-custom rounded-2xl">
+                    <button type="button" class="w-full text-15 lg:text-xl font-semibold flex items-center transition duration-200 ease-in-out focus:outline-none py-2 pl-2">
+                      <span class="text-left">Q. How can you get in touch?</span>
+                      <span class="ml-auto pr-3">
+                        <svg class="text-brand-green pointer-events-none transition-transform duration-200 ease-in" xmlns="http://www.w3.org/2000/svg" width="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="w-full h-0 transition-[height] duration-200 ease-in overflow-hidden text-13 lg:text-15 text-brand-gray px-4">
+                        <p>Absolutely. All buyers must provide the following information and documents in order to complete their purchase with you.</p>
+                        <ul class="list-disc list-inside pb-3">
+                            <li>They must already operate on Gambian territory</li>
+                            <li>Certificate of business registration</li>
+                            <li>MEMAT (Memorandum of Actionary)</li>
+                            <li>TIN number</li>
+                            <li>2 most recent financial statements</li>
+                            <li>ID card or passport of the company director</li>
+                            <li>Commercial invoice</li>
+                            <li>Transportation invoice</li>
+                            <li>Completed, signed and dated subscription form</li>
+                            <li>Completed, signed and dated terms and conditions form</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="py-1 px-4 shadow-custom rounded-2xl">
+                    <button type="button" class="w-full text-15 lg:text-xl font-semibold flex justify-between items-center transition duration-200 ease-in-out focus:outline-none py-2 pl-2">
+                        <span class="text-left">Q. Are the buyers going to be checked before purchasing my product through Djikéfactor?</span>
+                      <span class="ml-auto pr-3">
+                        <svg class="text-brand-green pointer-events-none transition-transform duration-200 ease-in" xmlns="http://www.w3.org/2000/svg" width="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="w-full h-0 transition-[height] duration-200 ease-in overflow-hidden text-13 lg:text-15 text-brand-gray px-4">
+                        <p>Absolutely. All buyers must provide the following information and documents in order to complete their purchase with you.</p>
+                        <ul class="list-disc list-inside pb-3">
+                            <li>They must already operate on Gambian territory</li>
+                            <li>Certificate of business registration</li>
+                            <li>MEMAT (Memorandum of Actionary)</li>
+                            <li>TIN number</li>
+                            <li>2 most recent financial statements</li>
+                            <li>ID card or passport of the company director</li>
+                            <li>Commercial invoice</li>
+                            <li>Transportation invoice</li>
+                            <li>Completed, signed and dated subscription form</li>
+                            <li>Completed, signed and dated terms and conditions form</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="py-1 px-4 shadow-custom rounded-2xl">
+                    <button type="button" class="w-full text-15 lg:text-xl font-semibold flex items-center transition duration-200 ease-in-out focus:outline-none py-2 pl-2">
+                        <span class="text-left">Q. How much does it cost?</span>
+                      <span class="ml-auto pr-3">
+                        <svg class="text-brand-green pointer-events-none transition-transform duration-200 ease-in" xmlns="http://www.w3.org/2000/svg" width="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="w-full h-0 transition-[height] duration-200 ease-in overflow-hidden text-13 lg:text-15 text-brand-gray px-4">
+                        <p>Absolutely. All buyers must provide the following information and documents in order to complete their purchase with you.</p>
+                        <ul class="list-disc list-inside pb-3">
+                            <li>They must already operate on Gambian territory</li>
+                            <li>Certificate of business registration</li>
+                            <li>MEMAT (Memorandum of Actionary)</li>
+                            <li>TIN number</li>
+                            <li>2 most recent financial statements</li>
+                            <li>ID card or passport of the company director</li>
+                            <li>Commercial invoice</li>
+                            <li>Transportation invoice</li>
+                            <li>Completed, signed and dated subscription form</li>
+                            <li>Completed, signed and dated terms and conditions form</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="py-1 px-4 shadow-custom rounded-2xl">
+                    <button type="button" class="w-full text-15 lg:text-xl font-semibold flex items-center transition duration-200 ease-in-out focus:outline-none py-2 pl-2">
+                        <span class="text-left">Q. How long will it take to receive my payment?</span>
+                      <span class="ml-auto pr-3">
+                        <svg class="text-brand-green pointer-events-none transition-transform duration-200 ease-in" xmlns="http://www.w3.org/2000/svg" width="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </span>
+                    </button>
+                    <div class="w-full h-0 transition-[height] duration-200 ease-in overflow-hidden text-13 lg:text-15 text-brand-gray px-4">
+                        <p>Absolutely. All buyers must provide the following information and documents in order to complete their purchase with you.</p>
+                        <ul class="list-disc list-inside pb-3">
+                            <li>They must already operate on Gambian territory</li>
+                            <li>Certificate of business registration</li>
+                            <li>MEMAT (Memorandum of Actionary)</li>
+                            <li>TIN number</li>
+                            <li>2 most recent financial statements</li>
+                            <li>ID card or passport of the company director</li>
+                            <li>Commercial invoice</li>
+                            <li>Transportation invoice</li>
+                            <li>Completed, signed and dated subscription form</li>
+                            <li>Completed, signed and dated terms and conditions form</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="flex justify-center py-8 sm:py-14">
+                <a class="font-poppins font-medium text-sm text-white rounded-full bg-brand-dark py-2 px-7 sm:px-16" href="#">See All Questions</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark">
+        <div class="max-w-7xl mx-auto sm:pt-10 px-10">
+            <div class="flex flex-wrap items-start pb-24">
+                <div class="w-full sm:w-1/2 md:w-1/4 pt-10 sm:pr-6 lg:pr-16">
+                    <a href="index.html">
+                        <img class="w-32" src="assets/logo.png" alt="logo">
+                    </a>
+                    <p class="font-inter text-sm text-gray-300 pt-4 pb-6">Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="#">
+                            <img src="assets/instagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/dribbble.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/twitter.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="assets/youtube.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/4 pt-10 space-y-3">
+                    <h1 class="font-poppins font-semibold text-white text-xl pb-3">Quick Links</h1>
+                    <a class="block font-inter text-sm text-gray-300" href="#">About us</a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Blog</a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Contact Us</a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Press</a>
+                    <a class="font-inter text-sm text-gray-300 flex items-center space-x-2" href="#">
+                        <span>Careers</span>
+                        <img src="assets/we’re-hiring.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/4 pt-10 space-y-3">
+                    <h1 class="font-poppins font-semibold text-white text-xl pb-3">Services</h1>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Products</a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Suppliers</a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Currency </a>
+                    <a class="block font-inter text-sm text-gray-300" href="#">Profit</a>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/4 pt-10 space-y-6">
+                    <h1 class="font-poppins font-semibold text-white text-xl">Reach us</h1>
+                    <a class="font-inter text-sm text-gray-300 flex items-center space-x-2" href="mailto:hello@djikefactor.co">
+                        <img src="assets/email-icon.svg" alt="">
+                        <span>hello@djikefactor.co</span>
+                    </a>
+                    <a class="font-inter text-sm text-gray-300 flex items-center space-x-2" href="tel:919876543210">
+                        <img src="assets/phone-icon.svg" alt="">
+                        <span>+91 98765 43210</span>
+                    </a>
+                    <div class="font-inter text-sm text-gray-300 flex items-start space-x-2">
+                        <img src="assets/location.svg" alt="">
+                        <p class="leading-relaxed">772 Lyonwood Ave <br> Walnut, CA 91789</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sm:flex items-center justify-between pb-6">
+                <p class="font-inter text-sm text-gray-300 text-center sm:text-left pt-4">© 2021 All Rights Reserved</p>
+
+                <div class="sm:flex items-center font-inter text-sm text-gray-300 space-y-2 sm:space-y-0 sm:divide-x pt-4">
+                    <a class="block text-center sm:text-left px-2" href="#">Terms & Conditions</a>
+                    <a class="block text-center sm:text-left px-2" href="#">Privacy Policy</a>
+                    <a class="block text-center sm:text-left px-2" href="#">Sitemap</a>
+                    <a class="block text-center sm:text-left px-2" href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
